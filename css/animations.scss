@@ -1,0 +1,68 @@
+$anim-length: 2s;
+
+.anim-enlarge { animation: enlarge $anim-length ease }
+@keyframes enlarge {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.anim-enlargeSm { animation: enlargeSm $anim-length ease }
+@keyframes enlargeSm {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.anim-enlargeXs { animation: enlargeXs $anim-length ease }
+@keyframes enlargeXs {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.anim-enlargeHide { animation: enlargeHide 2s cubic-bezier(0.5, 1, 0.89, 1); animation-delay: $anim-length; animation-fill-mode: forwards; }
+@keyframes enlargeHide {
+  0% {
+    display: flex;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  99% {
+    transform: scale(2);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.anim-compact { animation: compact $anim-length easeOutQuad; }
+@keyframes compact {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
