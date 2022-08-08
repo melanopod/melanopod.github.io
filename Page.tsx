@@ -14,16 +14,16 @@ function Page() {
           <div className="md:p-36 p-8 md:space-y-20 space-y-6 mt-12 md:mt-0">
             <h1 className="font-black lg:text-7xl md:text-6xl text-4xl">hey! i'm <span className="text-mlp-accent">melano</span></h1>
             <p className="md:text-4xl text-2xl w-full md:w-9/12 xl:w-full font-normal">
-              My name is melanopod - I enjoy
-              history, music and nature. I'm also a
-              moderator in a <a className="underline underline-offset-4" href="https://melanopod.carrd.co">few communities.</a> I hope to see you around!
+              My name is melano - I enjoy history,
+              music and darts. I'm also a
+              I also own a <a className="underline underline-offset-4" href="https://discord.gg/2uY7VCANjj">discord server.</a> I hope to see you around!
             </p>
             <div className="space-y-6">
               <SocialButtonRow>
                 <SocialButton
                   displayIcon={ <FaDiscord size="45px"/> }
-                  link=""
-                  text="melanopod#0001"
+                  link="https://discord.gg/2uY7VCANjj"
+                  text="melano#0001"
                   key="discord"
                 />
                 <SocialButton
